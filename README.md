@@ -34,4 +34,21 @@ Input and Output files can have names other than given above. Above is an exampl
 
 ### Advanced Elasticity Calculation Results
 
+We arbitrarily choose some item where all the values are not null (i.e. there has been enough price movements and no div/0 errors) to showcase the advanced calculations.
 
+![demand_curve](demand_curve.png)
+
+The image shows quantity vs price, which is linearly extrapolated and includes points at the mean and quartiles.
+Then, it shows quantity vs elasticity, which allows a glimpse into the actual distribution of elasticity.
+
+The stats of central tendency are, well, central and do not differ much.
+
+![results](results.png)
+
+Looks at the weighted components used for the weighted averages, and the use of median instead of mean as a potential means of approximation.  
+Shows the path of elasticity into a decreasing, convex shape near the first and last quartiles, and bending gracefully to connect for the middle quartiles. 
+-> This means the price for this particular product is more elastic at high quantities, and less at low elasticies, so when there is more quantity, customers are more likely to buy the product when the price is lowered, while with less quantity, customers' demand doesn't change as much regardless of price.
+
+![summary](summary.png)
+
+Showcases the positives vs negatives of each of the 4 ways I used to calculate average elasticity.
